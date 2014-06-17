@@ -21,6 +21,9 @@ var game = {
         // set all ressources to be loaded
         me.loader.preload(global_resources);
 
+        // initialise the audio subsystem
+        me.audio.init("mp3,ogg");
+
         // load everything & display a loading screen
         me.state.change(me.state.LOADING);
     },

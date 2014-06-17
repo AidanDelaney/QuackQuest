@@ -7,11 +7,13 @@ Node.js and Grunt are required to build from source.
 
 Furthermore the following grunt addons are required:
 
-> npm install grunt-contrib-uglify
-> npm install grunt-contrib-jshint
-> npm install grunt-contrib-qunit
-> npm install grunt-contrib-watch
-> npm install grunt-contrib-concat
+``` bash
+npm install grunt-contrib-uglify
+npm install grunt-contrib-jshint
+npm install grunt-contrib-qunit
+npm install grunt-contrib-watch
+npm install grunt-contrib-concat
+```
 
 Then
 

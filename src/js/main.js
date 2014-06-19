@@ -36,6 +36,9 @@ var game = {
         // set the "Play/Ingame" Screen Object
         me.state.set(me.state.PLAY, new game.PlayScreen());
 
+        // Register playing character
+        me.pool.register("mainPlayer", game.PlayerEntity);
+
         // enable the keyboard (to navigate in the map)
         me.input.bindKey(me.input.KEY.LEFT,  "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
@@ -57,9 +60,3 @@ var game = {
     }
 
 }; // game
-
-
-//bootstrap :)
-window.onReady(function() {
-    game.onload();
-});
